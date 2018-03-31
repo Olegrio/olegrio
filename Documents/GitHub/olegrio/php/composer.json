@@ -1,0 +1,16 @@
+{
+    "name": "webitmo2018/lumisade",
+    "description": "framevork for developer",
+    "type": "project",
+    "license": "ITMO",
+    "authors": [
+        {
+            "name": "all",
+            "email": "all@mail.ru"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "psr/log": "^1.0"
+    }
+}
