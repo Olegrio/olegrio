@@ -1,0 +1,232 @@
+@font-face{
+	
+	font-family: "Marcer Felt" ;
+	src: url(../font/10062.ttf);
+	font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	box-sizing: border-box;
+}
+.header{
+	height: 70px;
+	width: 100%;
+	background: #051525;
+	margin-bottom: 40px;
+	
+}
+
+.back{
+    margin-left: 3%;
+	margin-right: 3%;
+	width: 94%;
+    height: 380px;
+    background:url('../images/back.png');
+    position: relative;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	margin-bottom: 70px;
+	
+}
+
+.back:after{
+    content:'Спина';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+	text-transform: uppercase;
+	font-size:90px ;
+	font-family: "Marcer Felt";
+	color: #fff;
+}
+.back:hover:after{
+    display:none;
+}
+
+
+
+
+
+
+.legs{
+    margin-left: 3%;
+	margin-right: 3%;
+	width: 94%;
+    height: 380px;
+    background:url('../images/legs.png');
+    position: relative;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	margin-bottom: 70px;
+}
+
+.legs:after{
+  content:'ноги';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+	text-transform: uppercase;
+	font-size:90px ;
+	font-family: "Marcer Felt";
+	color: #fff;
+}
+.legs:hover:after{
+    display:none;
+}
+
+
+.petto{
+    margin-left: 3%;
+	margin-right: 3%;
+	width: 94%;
+    height: 380px;
+    background:url('../images/petto.png');
+    position: relative;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	margin-bottom: 70px;
+}
+
+.petto:after{
+  content:'грудь';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+	text-transform: uppercase;
+	font-size:90px ;
+	font-family: "Marcer Felt";
+	color: #fff;
+}
+.petto:hover:after{
+    display:none;
+}
+
+
+
+.arms{
+    margin-left: 3%;
+	margin-right: 3%;
+	width: 94%;
+    height: 380px;
+    background:url('../images/arms.png');
+    position: relative;
+	background-repeat: no-repeat;
+	background-size: cover; 
+	margin-bottom: 70px;
+}
+
+.arms:after{
+  content:'руки';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+	text-transform: uppercase;
+	font-size:90px ;
+	font-family: "Marcer Felt";
+	color: #fff;
+}
+.arms:hover:after{
+    display:none;
+}
+
+.menu {
+	color: white;
+	padding: 10px 20px 20px 20px;
+
+}
+.header__menu{
+	float: left;
+	padding: 5px 20px 20px 20px;
+}
+.header__userInfo .fa-ellipsis-h:before{
+	color: white;
+}
+.header__userInfo{
+	float: right;
+	padding: 10px 20px 20px 20px;
+}
+
+.header__userAvatar{
+	float: right;
+	width: 50px;
+	height: 50px;
+	text-align: right;
+	border: 4px solid white;
+	border-radius:50px;
+	margin: 5px 10px 10px 10px;
+	background-image: url(../images/avatar.jpg);
+	background-size: cover;
+}
+
+.footer{
+	flex: 0 0 auto;
+	height: 70px;
+	width: 100%;
+	background: #051525;
+}
+
+.hidden-menu {
+	display: block;
+	position: fixed;
+	list-style:none;
+	padding: 10px;
+	margin: 0;
+	box-sizing: border-box;
+	width: 50%;
+	background-color: #051525;
+	opacity: 0.8;
+	height: 100%;
+	top: 0;
+	left: -50%;
+	transition: left .2s;
+	z-index: 2;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+
+}
+
+.hidden-menu-ticker {
+	display: none;
+}
+
+.btn-menu {
+	color: #fff;
+	padding: 5px;
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	cursor: pointer;
+	transition: left .23s;
+	z-index: 3;
+	width: 25px;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+	display: block;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px 0 0;
+	transition: all .1s linear .23s;
+	position: relative;
+}
+.btn-menu span.first {
+	margin-top: 0;
+}
+
+
+.hidden-menu-ticker:checked ~ .btn-menu {
+	left: 40%;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+	left: 0;
+}
+
+.hidden-menu a{
+	color: white;
+}
